@@ -31,7 +31,6 @@ public class RelatorioResumoMensal {
 	
 	private void ordenarResumo() {
 		this.resumos.sort((r1, r2) -> r2.getMes().compareTo(r1.getMes()));
-		
 	}
 	
 	public List<ResumoMensal> getResumos() {
