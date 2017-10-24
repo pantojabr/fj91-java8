@@ -44,7 +44,7 @@
 					<c:forEach items="${negociacoes}" var="negociacao">
 						<tr>
 							<td>
-								<c:out value="${negociacao.dataFormatada}" />
+								<fmt:formatDate value="${negociacao.data.time}" pattern="dd/MM/yyyy" />
 							</td>
 							
 							<td>

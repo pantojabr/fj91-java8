@@ -24,7 +24,7 @@
 					<c:forEach items="${resumos}" var="resumo">
 						<tr>
 							<td>
-								<c:out value="${resumo.mesFormatado()}" />
+								<c:out value="${resumo.mes}" />
 							</td>
 							
 							<td>

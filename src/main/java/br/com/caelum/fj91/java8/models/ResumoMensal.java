@@ -1,26 +1,20 @@
 package br.com.caelum.fj91.java8.models;
 
 import java.math.BigDecimal;
-import java.time.YearMonth;
-import java.time.format.DateTimeFormatter;
 
 public class ResumoMensal {
 
-	private final YearMonth mes;
+	private final String mes;
 	private final Integer quantidade;
 	private final BigDecimal volume;
 
-	public ResumoMensal(YearMonth mes, Integer quantidade, BigDecimal volume) {
+	public ResumoMensal(String mes, Integer quantidade, BigDecimal volume) {
 		this.mes = mes;
 		this.quantidade = quantidade;
 		this.volume = volume;
 	}
 	
-	public String mesFormatado() {
-		return mes.format(DateTimeFormatter.ofPattern("MM/yyyy"));
-	}
-	
-	public YearMonth getMes() {
+	public String getMes() {
 		return mes;
 	}
 	public Integer getQuantidade() {
